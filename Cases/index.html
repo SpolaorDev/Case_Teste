@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Testes</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Estilos básicos para um design estilo Vans */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        .main-banner {
+            background: url('https://via.placeholder.com/1920x600') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+            margin-top: 70px; /* Para compensar o cabeçalho fixo */
+        }
+
+        .main-banner h2 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .content {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .product-item {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            width: calc(33.333% - 20px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .product-item h3 {
+            margin: 10px;
+            font-size: 1.5rem;
+        }
+
+        .product-item p {
+            margin: 0 10px 10px;
+        }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Site de Testes</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="tema1.html">Tema 1</a></li>
+                    <li><a href="tema2.html">Tema 2</a></li>
+                    <li><a href="tema3.html">Tema 3</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-banner">
+        <h2>Bem-vindo ao Site de Testes</h2>
+    </div>
+
+    <main class="content">
+        <h2>O sete cases de teste</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="https://thumbs.dreamstime.com/b/homem-que-trabalha-no-computador-23215789.jpg" alt="teste 1">
+                <h3>Positivo</h3>
+                <p>Testa entradas válidas e espera que o sistema funcione corretamente.</p>
+            </div>
+            <div class="product-item">
+                <img src="https://miro.medium.com/v2/resize:fit:900/1*8CM8xyu2U-fs8mS_adV0lg.jpeg" alt="teste 2">
+                <h3>Negativo</h3>
+                <p>Testa entradas inválidas para verificar como o sistema lida com erros.</p>
+            </div>
+            <div class="product-item">
+                <img src="https://www.projetodraft.com/wp-content/uploads/2017/08/full-stacker.jpg" alt="teste 3">
+                <h3>Limite</h3>
+                <p> Avalia o comportamento do sistema nas extremidades dos valores aceitáveis.</p>
+            </div>
+            <div class="product-item">
+                <img src="https://tm.ibxk.com.br/2022/09/16/profissao-dev-16153228659058.jpg" alt="teste 4">
+                <h3>Exceção</h3>
+                <p>Testa situações raras ou inesperadas para ver como o sistema responde.</p>
+            </div>
+            <div class="product-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9kzbp2gHwKnh3_hDNMEAxkZWLgYopH-Aav0y3rrjS8azNNjKm3SmMxz9D9--T292EYAc&usqp=CAU" alt="teste 5">
+                <h3>Regressão</h3>
+                <p>Garante que novas mudanças não afetem funcionalidades existentes.</p>
+            </div>
+            <div class="product-item">
+                <img src="https://media.licdn.com/dms/image/D4D12AQGr1X-YjTQ96w/article-cover_image-shrink_600_2000/0/1684199529968?e=2147483647&v=beta&t=vz9OR2E5oJK0BS7psgje1g56u6ylWAUrY8P_Dzp-cOI" alt="teste 6">
+                <h3>Integração</h3>
+                <p>Verifica a interação entre diferentes módulos ou componentes do sistema.</p>
+            </div>
+            <div class="product-item">
+                <img src="https://img-c.udemycdn.com/course/480x270/1172610_9b73_3.jpg" alt="teste 7">
+                <h3>Desempenho</h3>
+                <p>Avalia a eficiência do sistema sob carga, incluindo tempo de resposta e uso de recursos.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Site de Testes. Todos os direitos reservados SpolaorDev.</p>
+    </footer>
+</body>
+</html>
